@@ -216,7 +216,7 @@ a#scrollUp i{
 
 .shop-menu ul li a:hover {
 	color:#84C9FB;
-	background:#fff;
+	background:#2A2A2A;
 }
 
 
@@ -249,7 +249,7 @@ a#scrollUp i{
 
 .mainmenu ul li a:hover, .mainmenu ul li a.active,  .shop-menu ul li a.active{
 	background:none;
-	color:#fdb45e;
+	color:#ffffff;
 }
 
 .search_box input {
@@ -360,7 +360,7 @@ ul.sub-menu {
 }
 
 .companyinfo h2 {
-  color: #B4B1AB;
+  color: #ffffff;
   font-family: abel;
   font-size: 27px;
   text-transform: uppercase;
@@ -603,11 +603,11 @@ ul.sub-menu {
 }
 
 .item h1 span {
-	color:#FFF;
+	color:#84C9FB;
 }
 
 .item h2 {
-  color: #363432;
+  color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: 700;
@@ -616,7 +616,7 @@ ul.sub-menu {
 }
 
 .item  p {
-	color:#363432;
+	color:#ffffff;
 	font-size:16px;
 	font-weight:300;
 	font-family: 'Roboto', sans-serif;
