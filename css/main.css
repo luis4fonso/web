@@ -674,7 +674,7 @@ ul.sub-menu {
 .left-sidebar h2:after, h2.title:after{
 	content: " ";
 	position: absolute;
-	border: 1px solid #2A2A2A;
+	border: 1px solid #275c82;
 	bottom:8px;
 	left: 0;
 	width: 100%;
@@ -2520,4 +2520,7 @@ h2.title {
   color: #84C9FB;
 }
 
+.price-clr {
+  color:#ffffffb9;
+}
 
