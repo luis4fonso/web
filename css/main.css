@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background:   #2A2A2A;
+  background:   #27282B;
   position: relative;
   font-weight:400px;
 }
@@ -2524,3 +2524,10 @@ h2.title {
   color:#ffffffb9;
 }
 
+p {
+  white-space: nowrap;
+  overflow: hidden;
+}
+.overflow-clip {
+  text-overflow: ellipsis;
+}
