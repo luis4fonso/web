@@ -1,0 +1,273 @@
+GUIA SEQUELIZE:
+
+ESTABELECENDO CONEXÃO COM O BANCO DE DADOS:
+  Obs:Baixe a extensão Todo+
+  Utilize alt + D para marcar a caixa
+
+☐ Criar pasta chamada database na raiz do projeto
+☐ Na raiz do projeto criar o arquivo .sequelizerc
+☐ Importar a biblioteca path dentro do .sequelizerc
+const path = require("path")
+☐ Criar um objeto dentro do sequelizerc
+modules.exports = {
+    'config': path.resolve('database','config.js')
+}
+
+Nesse caso utilizamos o sequelizerc para saber onde está o arquivo de configurações
+que será utilizado para conexão
+
+☐ Criar o arquivo config.js dentro da pasta database
+☐ Dentro do config.js importar as variáveis de ambiente
+Aqui serão guardadas as informaões necessárias para o sequelizar usar nosso
+banco de dados
+
+Segue um exemplo abaixo, pfv configurar de acordo com sua máquina.
+
+const config = {
+  username: "root",
+  password: "",
+  host: "127.0.0.1",
+  port: "3306",
+  dialect: "mysql",
+  database: "exemplodb",
+};
+☐ Crie um database para testar se o Sequelize está conectado ao seu banco de dados
+No terminal, utilize o comando:  npx sequelize db:create
+Assim você deve ter criado um database chamado "exemplodb" dentro SQL. 
+
+☐ Criar o arquivo .env na raiz do projeto com os seguintes dados:
+
+DBUSER=root
+DBNAME=msqn
+DBHOST= localhost
+DBDIALECT=mysql
+DBPORT=3306
+DBPASS=devsql
+
+As informações passadas devem estar de acordo com as suas variáveis de ambiente.
+
+A ideia deste arquivo é que não queremos compartilhar essas informações,
+assim iremos escondê-la dentro do .gitignore, 
+dessa forma esses dados não irão para o Github
+
+☐ Adicionar o arquivo .env no arquivo .gitignore
+☐ Instalar a biblioteca .env
+npm i dotenv
+☐ Importar a biblioteca "dotenv" e execute a função config dentro do arquivo config.js
+require('dotenv').config();
+Assim será possível utilizar as variáveis de ambiente do arquivo .env dentro do config.js
+
+☐ Altere os dados das variáveis de ambiente do config.js de acordo com o exemplo abaixo.
+Seu config.js deve ta assim
+
+require('dotenv').config();
+
+module.exports = {
+    username: process.env.DBUSER,
+    password: process.env.DBPASS,
+    dialect: process.env.DBDIALECT,
+    host: process.env.DBHOST,
+    port: process.env.DBPORT,
+    database: process.env.DBNAME 
+}
+
+Assim, suas variáveis de ambiente ficarão de acordo com o seu arquivo .env
+
+☐ Criar o arquivo .env.example para instruir outros colegas na criação do .env
+DBUSER=
+DBNAME=
+DBHOST=
+DBDIALECT=
+DBPORT=
+DBPASS=
+
+Assim outras pessoas envolvida no projeto precisa apenas completar 
+com seus respectivos dados no arquivo .env
+
+CRIANDO MIGRATIONS:
+☐ No .sequelizerc, dentro do objeto que está sendo exportado, adicione um novo campo chamado migrations-path
+const path = require("path");
+
+module.exports = {
+    'config': path.resolve('database','config.js'),
+    'migrations-path': path.resolve('database','migrations')
+}
+
+Assim deve estar o arquivo .sequelierc até agora.
+
+Logo abaixo do campo config, iremos adicionamos o campo migrations-path
+Assim diremos ao sequelize onde estão as migrations.
+
+☐ Crie a pasta migrations com uma migration dentro da mesma, utilize o comando abaixo
+npx sequelize migration:generate --name create-usuarios
+☐ Confirme se foi criada a migration create-usuarios na pasta migrations, dentro da pasta database.
+☐ Dentro da migration criada, modifique as funções para criar uma tabela de acordo com seu DER.
+Começando com a tabela principal, por exemplo, uma tabela de usuários,
+com as colunas: id, nome, email, senha e foto.
+
+Aqui segue um exemplo de como deveria ficar a migration:
+
+'use strict';
+
+module.exports = {
+  async up (queryInterface, Sequelize) {    
+
+     await queryInterface.createTable('usuarios', 
+     { 
+        id: {
+         type: Sequelize.DataTypes.INTEGER,
+         primaryKey: true,
+         autoIncrement: true,
+         allowNull: false
+      },
+        nome: {
+          type: Sequelize.DataTypes.STRING(45),
+          allowNull: false
+      },
+        email: {
+          type: Sequelize.DataTypes.STRING(45),
+          allowNull: false
+      },
+        senha: {
+          type: Sequelize.DataTypes.STRING(65),
+          allowNull: false
+      },
+        foto: {
+          type: Sequelize.DataTypes.STRING(45),
+          allowNull: true
+        }
+      }
+    );
+  },
+
+  async down (queryInterface, Sequelize) {    
+
+     await queryInterface.dropTable('usuarios');
+  }
+};
+
+☐ No terminal, use o comando npx sequelize db:migrate para executar as migrations.
+☐ No seu banco de dados, verifique se a tabela foi criada.
+☐ Execute o comando npx sequelize db:migrate novamente, nada deve mudar, pois ela ja foi executada.
+☐ Execute a função " async down", utilizando-a para desfazer a migration e removendo a tabela..
+npx sequelize db:migrate:undo
+☐ Crie novamente a tabela que você acabou de deletar, porém adicionando mais 3 colunas no async up.
+createdAt: Sequelize.DataTypes.DATE,
+updatedAt: Sequelize.DataTypes.DATE,
+deletedAt: Sequelize.DataTypes.DATE,
+
+CRIANDO SEEDERS:
+
+☐ Adicione a seeders-path ao .sequelizerc
+'seeders-path': path.resolve('database','seeders')
+
+☐ Crie a pasta seeders com o comando no terminal:
+npx sequelize seed:generate --name seed-usuarios
+
+☐ Adicione a função builkInsert dentro do async up no seeders de usuario
+module.exports = {
+  async up (queryInterface, Sequelize) {
+    
+    let usuarios = [];
+    
+    for(let i=1; i<=20; i++){
+      usuarios.push(
+        {
+          id: i,
+          nome: `Usuário ${i}`,
+          email: `usuario${i}@teste.com`,
+          senha: bcrypt.hashSync('123456', 10),
+          foto: `perfil_${i}.jpg`,
+          createdAt: (new Date()).toJSON().substring(0,19)
+        }
+      )
+    }
+
+    await queryInterface.bulkInsert('usuarios', usuarios, {});
+    
+  },
+
+  async down (queryInterface, Sequelize) {
+    await queryInterface.bulkDelete('usuarios', null, {});
+  }
+};
+
+outro exemplo de seeder c 3 usuarios sem usar o loop..
+
+const bcrypt = require('bcrypt')
+
+module.exports = {
+  async up (queryInterface, Sequelize) {    
+     
+     await queryInterface.bulkInsert('usuarios', [
+    {
+      id: 1,
+      nome: 'Bruce Banner',
+      foto: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      nascimento: "1982-05-11",
+      endereco: "Praça Recanto Trovadores 1283",
+      classe: 1,
+      sexo: "M",
+      email: "bruce@teste.com",
+      senha: bcrypt.hashSync("123456", 10),
+      createdAt: new Date()
+    },
+    {
+      id: 2,
+      nome: 'Tony Stark',
+      foto: "https://images.unsplash.com/photo-1579880651719-3cef00eae7de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80",
+      nascimento: "1989-12-21",
+      endereco: "Rua dos Expedicionários 873",
+      classe: 2,
+      sexo: "M",
+      email: "tony@teste.com",
+      senha: bcrypt.hashSync("123456", 10),
+      createdAt: new Date()
+    },
+    {
+      id: 3,
+      nome: 'Jean Grey',
+      foto: "https://images.unsplash.com/photo-1620794108219-aedbaded4eea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      nascimento: "1988-04-13",
+      endereco: "Rua Barão Capanema 879",
+      classe: 3,
+      sexo: "F",
+      email: "jeangrey@teste.com",
+      senha: bcrypt.hashSync("123456", 10),
+      createdAt: new Date()
+    }
+    ], {});
+    
+  },
+
+  async down (queryInterface, Sequelize) {
+     await queryInterface.bulkDelete('usuarios', null, {});
+     
+  }
+};
+
+
+
+☐ Instale o bcrypt e o importe dentro do seeders de usuarios
+npm i bcrypt
+
+const bcrypt = require("bcrypt"); ///  DENTRO DO SEEDERS USUARIOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

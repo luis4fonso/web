@@ -1,0 +1,69 @@
+☐ Instalar express generator
+☐ Usar o comando para criar o template sem as views
+npx express --no-view ./
+
+
+CRIANDO ROTA POST PARA USUARIO:
+☐ renomear o arquivo User.js para UsuariosRouter.js
+☐ renomear a variavel usersRouter para UsuariosRouter dentro do app.js
+☐ adicionar '/api/v1/usuarios' como rota em app.use na linha 18.
+☐ Cria uma rota post que crie outro usuarios, em UsuariosRouter.js
+router.post('/', UsuariosController.registrar);
+☐ Feito isso, criar o controle.
+
+
+
+
+
+
+CRIAR O CONTROLE:
+☐ Criar a pasta controllers
+☐ Criar o arquivo UsuariosController.js
+☐ Crie a função registrar
+module.exports ={
+    registrar: (req,res) => {
+        // criar um usuario
+    }
+}
+☐ importe o usuariosController dentro de UsuariosRouter.js
+router.post('/', UsuariosController.registrar);
+☐ Instalar nodemon
+npm i nodemon -D
+☐ no package.json add opção dev para iniciar o nodemon.
+"dev": "nodemon ./bin/www"
+☐ iniciar o nodemon com npm run dev
+☐ add res.send a função registrar
+res.send("vai criar um usuario...")
+☐ acessar o browser para testar o codigo
+http://localhost:3000/api/v1/usuarios
+☐ installar as bibliotecas relacionadas ao banco de dados
+npm i sequelize mysql2 sequelize-cli
+
+CRIANDO ROTA GET PARA LISTAR USUARIOS:
+
+☐ crie a função buscar dentro de usuariosControllers.js
+buscar: async (req,res) => {
+        // carregar todos os usuarios
+        let usuarios = await Usuario.findAll()
+
+        //enviar para o cliente
+        res.send(usuarios)
+    }
+☐ importe a model de usuarios dentro de usuariosControllers.js
+const {Usuario} = require('../models')
+☐ crie o router.get para a função buscar usuario
+router.get('/', UsuariosController.buscar);
+☐ carregue todos os usuarios dentro da função buscar
+☐ instale o dotenv
+npm i dotenv
+☐ UsuariosRouter.js deve estar assim:
+var express = require('express');
+var router = express.Router();
+const UsuariosController = require('../controllers/UsuariosController.js')
+
+
+router.post('/', UsuariosController.registrar);
+router.get('/', UsuariosController.buscar);
+
+
+module.exports = router;
