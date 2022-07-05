@@ -883,14 +883,16 @@ h2.title {
 }
 
 .productinfo img{
+  height: 355px;
   width: 100%;
+  max-width: 268px;
 }
 
 .productinfo{
  position:relative;
 }
 
-.product-overlay {
+/* .product-overlay {
   background:#84C9FB;
   top: 0;
   display: none;
@@ -900,7 +902,7 @@ h2.title {
   width: 100%;
   display: block;
   opacity:;
-}
+} */
 
 .single-products:hover .product-overlay {
   display:block;
