@@ -360,20 +360,20 @@ ul.sub-menu {
 }
 
 .companyinfo h2 {
-  color: #ffffff;
+  color: #84C9FB;
   font-family: abel;
   font-size: 27px;
   text-transform: uppercase;
 }
 
 .companyinfo h2  span{
-  color:#ffffff;
+  color:black;
 }
 
 .companyinfo p {
-  color: #ffffff;
+  color: black;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 300;
 }
 
@@ -396,7 +396,7 @@ ul.sub-menu {
   display: block;
   height: 61px;
   margin-bottom: 10px;
-  border: 2px solid #CCCCC6;
+  /* border: 2px solid #CCCCC6; */
   border-radius: 3px;
 }
 
@@ -424,26 +424,26 @@ ul.sub-menu {
   margin-top: -20px;
 }
 
-.video-gallery a:hover .overlay-icon{
+/* .video-gallery a:hover .overlay-icon{
   opacity: 1;
-}
+} */
 
-.video-gallery p {
+/* .video-gallery p {
   color: #8C8C88;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 500;
   margin-bottom:0px;
-}
+} */
 
-.video-gallery  h2 {
+/* .video-gallery  h2 {
   color: #8c8c88;
   font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 300;
   text-transform:uppercase;
   margin-top:0px;
-}
+} */
 
 
 .address {
@@ -472,6 +472,16 @@ ul.sub-menu {
 .footer-widget .container {
   border-top: 1px solid #2A2A2A;
   padding-top: 15px;
+}
+
+#container-team {
+  display:flex;
+  border:none
+}
+
+#container-team img {
+  display:flex;
+  border:none
 }
 
 .single-widget h2 {
@@ -1471,13 +1481,19 @@ h2.title {
 **************************/
 
 #form {
-  display: block;
-  margin-bottom: 185px;
-  margin-top: 185px;
-  overflow: hidden;
+  background-image: url("../images/login/bgdark-dragon.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  /* margin-bottom:20px; */
+  margin-right:auto;
+  margin-left:auto;
+  height: 800px;
+
 }
 
 .login-form {
+
 
 }
 
@@ -1486,11 +1502,13 @@ h2.title {
 }
 
 .login-form h2, .signup-form h2 {
-  color: #84C9FB;
+  color: white;
   font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 300;
   margin-bottom: 30px;
+  font-weight: bolder;
+
 }
 
 
@@ -1511,6 +1529,7 @@ h2.title {
 
 .login-form form span{
   line-height: 25px;
+  color: white;
 }
 
 .login-form form span input {
