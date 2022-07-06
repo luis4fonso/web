@@ -851,6 +851,12 @@ h2.title {
 	margin-bottom:30px;
 }
 
+.product2-image-wrapper{
+	border:1px solid #F7F7F5;
+	overflow: hidden;
+	margin-bottom:30px;
+}
+
 .single-products {
   position: relative;
 }
