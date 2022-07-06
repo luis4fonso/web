@@ -2,12 +2,12 @@
 /*************************
 *******Typography******
 **************************/
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,500,700,100);
+@import url(http://fonts.googleapis.com/css?family=Poppins:400,300,400italic,500,700,100);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background:  #2A2A2A;
   position: relative;
   font-weight:400px;
@@ -35,7 +35,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .btn:hover, 
@@ -78,7 +78,7 @@ a#scrollUp i{
 .contactinfo ul li a{
   font-size: 12px;
   color: #84C9FB;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -181,7 +181,7 @@ a#scrollUp i{
 /* .dropdown-menu  li  a:hover, .dropdown-menu  li  a:focus {
   background-color: #84C9FB;
   color: #2A2A2A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
 } */
 
@@ -200,7 +200,7 @@ a#scrollUp i{
 .shop-menu ul li a {
   background: #2A2A2A;
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 300;
   padding:0;
@@ -240,7 +240,7 @@ a#scrollUp i{
 
 .mainmenu ul li a {
 	color: #84C9FB;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 17px;
 	font-weight: 300;
 	padding: 0;
@@ -256,7 +256,7 @@ a#scrollUp i{
   background: #F0F0E9;
   border: medium none;
   color: #B2B2B2;
-  font-family: 'roboto';
+  font-family: 'Poppins';
   font-size: 12px;
   font-weight: 300;
   height: 35px;
@@ -372,7 +372,7 @@ ul.sub-menu {
 
 .companyinfo p {
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 300;
 }
@@ -430,7 +430,7 @@ ul.sub-menu {
 
 .video-gallery p {
   color: #8C8C88;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 500;
   margin-bottom:0px;
@@ -438,7 +438,7 @@ ul.sub-menu {
 
 .video-gallery  h2 {
   color: #8c8c88;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   font-weight: 300;
   text-transform:uppercase;
@@ -457,7 +457,7 @@ ul.sub-menu {
 
 .address p {
   color: #666663;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 300;
   left: 25px;
@@ -476,7 +476,7 @@ ul.sub-menu {
 
 .single-widget h2 {
   color: #666663;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 22px;
@@ -489,7 +489,7 @@ ul.sub-menu {
 
 .single-widget ul li a{
 	color: #8C8C88;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	padding: 5px 0;
@@ -508,7 +508,7 @@ ul.sub-menu {
 .searchform input {
   border: 1px solid #DDDDDD;
   color: #CCCCC6;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   margin-top: 0;
   outline: medium none;
@@ -538,7 +538,7 @@ ul.sub-menu {
 
 .searchform p {
   color: #8C8C88;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 300;
   margin-top: 25px;
@@ -551,7 +551,7 @@ ul.sub-menu {
 
 .footer-bottom p {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   margin-left: 15px;
 }
@@ -608,7 +608,7 @@ ul.sub-menu {
 
 .item h2 {
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 22px;
@@ -619,7 +619,7 @@ ul.sub-menu {
 	color:#ffffff;
 	font-size:16px;
 	font-weight:300;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 .get {
@@ -627,7 +627,7 @@ ul.sub-menu {
   border: 0 none;
   border-radius: 0;
   color: #2A2A2A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: 300;
   margin-top: 23px;
@@ -661,7 +661,7 @@ ul.sub-menu {
 }
 .left-sidebar h2, .brands_products h2 {
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin: 0 auto 30px;
@@ -723,7 +723,7 @@ h2.title:before{
 
 .category-products .panel-default .panel-heading .panel-title a {
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   text-decoration: none;
   text-transform: uppercase;
@@ -755,7 +755,7 @@ h2.title:before{
 
 .panel-body ul li a {
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -770,7 +770,7 @@ h2.title:before{
 .brands-name .nav-stacked li a {
   background-color: #359de880;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   padding: 5px 25px;
   text-decoration: none;
@@ -836,7 +836,7 @@ h2.title:before{
 
 h2.title {
   color: #FFF;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 700;
   margin: 0 15px;
@@ -846,7 +846,7 @@ h2.title {
 }
 
 .product-image-wrapper{
-	border:1px solid #F7F7F5;
+	
 	overflow: hidden;
 	margin-bottom:30px;
 }
@@ -861,36 +861,69 @@ h2.title {
   right: 0;
 }
 
-.productinfo h2{
-	color: #FFF;
-	font-family: 'Roboto', sans-serif;
+.product-overlay h2{
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
 }
-.product-overlay h2{
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
+
+.productinfo h2{
+	color: #FFF;
+	font-family: 'Poppins', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
 }
 
 
 .productinfo p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #ffffff;
 }
 
 .productinfo img{
-  height: 355px;
+
+  height: 235px;
+  width: 435px;
   width: 100%;
-  max-width: 268px;
+  
 }
 
 .productinfo{
  position:relative;
 }
+
+/* ------- product info 2 (loja)---------- */
+
+
+.productinfo2 h2{
+	color: #FFF;
+	font-family: 'Poppins', sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+
+.productinfo2 p{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.productinfo2 img{
+  
+  height: 355px;
+  width: 100%;
+  
+}
+
+.productinfo2{
+ position:relative;
+}
+
 
 /* .product-overlay {
   background:#84C9FB;
@@ -923,7 +956,7 @@ h2.title {
   border: 0 none;
   border-radius: 0;
   color: #00000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   margin-bottom: 25px;
 } */
@@ -935,7 +968,7 @@ h2.title {
 
 
 .product-overlay p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 400;
   color: #fff;
@@ -948,7 +981,7 @@ h2.title {
   border: 0 none;
   border-radius: 0;
   color: #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   margin-bottom: 25px;
 }
@@ -979,7 +1012,7 @@ h2.title {
 
 .choose ul li a {
   color: #B3AFA8;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 13px;
   padding-left: 0;
   padding-right: 0;
@@ -1012,7 +1045,7 @@ h2.title {
   border-radius: 0;
   color: #B3AFA8;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -1044,6 +1077,10 @@ h2.title {
 
 .recommended_items {
   overflow: hidden;
+}
+
+.carousel-inner {
+  background-color: #0083C9;
 }
 
 #recommended-item-carousel .carousel-inner .item {
@@ -1183,7 +1220,7 @@ h2.title {
   background: #FFF;
   bottom: 0;
   color: #2A2A2A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 0;
@@ -1233,14 +1270,14 @@ h2.title {
 
 .product-information h2 {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   margin-top: 0;
 }
 
 .product-information p {
   color: #84C9FB;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 5px;
 }
 
@@ -1253,7 +1290,7 @@ h2.title {
 .product-information span span {
   color: #84C9FB;
   float: left;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 30px;
   font-weight: 700;
   margin-right: 20px;
@@ -1262,7 +1299,7 @@ h2.title {
 .product-information span input {
   border: 1px solid #DEDEDC;
   color: #84C9FB;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 700;
   height: 33px;
@@ -1273,7 +1310,7 @@ h2.title {
 
 .product-information span label {
   color: #84C9FB;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   margin-right: 5px;
 }
@@ -1288,7 +1325,7 @@ h2.title {
   border: 0 none;
   border-radius: 0;
   color: #2A2A2A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 15px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -1323,7 +1360,7 @@ h2.title {
 #reviews ul li a {
   color: #84C9FB;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   padding-right: 15px;
 }
@@ -1350,7 +1387,7 @@ h2.title {
   background:#F0F0E9;
   border: 0 none;
   color: #A6A6A1;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   outline: medium none;
   padding: 8px;
@@ -1379,7 +1416,7 @@ h2.title {
   border: 0 none;
   border-radius: 0;
   color: #2A2A2A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
 }
 
@@ -1394,7 +1431,7 @@ h2.title {
 
 .content-404 h1 {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 41px;
   font-weight: 300;
 }
@@ -1405,7 +1442,7 @@ h2.title {
 
 .content-404 p {
   color: #363432;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 18px;
 }
 
@@ -1416,7 +1453,7 @@ h2.title {
 .content-404 h2 a {
   background: #84C9FB;
   color: #2A2A2A;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 44px;
   font-weight: 300;
   padding: 8px 40px;
@@ -1444,7 +1481,7 @@ h2.title {
 
 .login-form h2, .signup-form h2 {
   color: #84C9FB;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 20px;
   font-weight: 300;
   margin-bottom: 30px;
@@ -1456,7 +1493,7 @@ h2.title {
   border: medium none;
   color: #84C9FB;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 300;
   height: 40px;
@@ -1487,7 +1524,7 @@ h2.title {
   border-radius: 0;
   color: #2A2A2A;
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding: 6px 25px;
 }
 
@@ -1510,7 +1547,7 @@ h2.title {
 	background: #84C9FB;
 	border-radius: 40px;
 	color: #2A2A2A;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-size: 16px;
 	height: 50px;
 	line-height: 50px;
@@ -1571,7 +1608,7 @@ h2.title {
   background: #84C9FB;
   color: #fff;
   font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
 }
 
@@ -1605,7 +1642,7 @@ h2.title {
 
 #cart_items .cart_info .cart_description h4 a {
   color: #363432;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-size: 20px;
   font-weight: normal;
 
@@ -1650,7 +1687,7 @@ h2.title {
   float: left;
   font-size: 16px;
   text-align: center;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Poppins',sans-serif;
   
 }
 
@@ -1683,7 +1720,7 @@ h2.title {
 .heading h3 {
   color: #363432;
   font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .heading p {
@@ -1806,7 +1843,7 @@ h2.title {
   font-size: 20px;
   margin-bottom: 35px;
   padding: 10px 25px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .checkout-options {
@@ -1819,7 +1856,7 @@ h2.title {
   font-size: 20px;
   margin-bottom: 0;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .checkout-options p {
@@ -1833,7 +1870,7 @@ h2.title {
   margin-right: 45px;
   color: #84C9FB;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: normal;
 }
 
@@ -1932,7 +1969,7 @@ h2.title {
 .order-message label {
   font-weight:300;
   color: #84C9FB;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-left: 10px;
   font-size: 14px
 }
@@ -1996,7 +2033,7 @@ h2.title {
 .single-blog-post h3 {
   color: #84C9FB;
   font-size: 16px;
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Poppins',sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 17px;
@@ -2225,7 +2262,7 @@ h2.title {
   color: #363432;
   font-size: 14px;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 15px
 }
 
