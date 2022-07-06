@@ -146,10 +146,12 @@ a#scrollUp i{
 
 .header-middle .container .row .col-sm-4{
   padding-left: 0;
+
 }
 
 .header-middle .container .row .col-sm-8 {
 	padding-right:0;
+
 }
 
 /* .usa {
@@ -347,34 +349,41 @@ ul.sub-menu {
 
 #footer {
   background: #F0F0E9;
+
 }
 
 
 .footer-top .container {
   border-bottom: 1px solid #E0E0DA;
   padding-bottom: 20px;
+
 }
+
+
 
 .companyinfo {
   margin-top: 57px;
+
 }
 
 .companyinfo h2 {
-  color: #ffffff;
+  color: #84C9FB;
   font-family: abel;
   font-size: 27px;
   text-transform: uppercase;
 }
 
 .companyinfo h2  span{
-  color:#ffffff;
+  color: black;
+
 }
 
 .companyinfo p {
-  color: #ffffff;
+  color: black;
   font-family: 'Roboto', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 300;
+  font-weight: bold;
 }
 
 .footer-top .col-sm-3{
@@ -393,11 +402,15 @@ ul.sub-menu {
 
 .iframe-img {
   position: relative;
-  display: block;
-  height: 61px;
+  display: flex;
+  height: 90px;
   margin-bottom: 10px;
-  border: 2px solid #CCCCC6;
-  border-radius: 3px;
+  /* border: 2px solid #CCCCC6; */
+  /* border-radius: 3px; */
+}
+
+#container-team {
+  display: flex;
 }
 
 .overlay-icon {
@@ -419,6 +432,7 @@ ul.sub-menu {
 }
 
 .overlay-icon i {
+
   position: relative;
   top: 50%;
   margin-top: -20px;
@@ -450,13 +464,15 @@ ul.sub-menu {
   margin-top: 30px;
   position: relative;
   overflow: hidden;
+
 }
 .address  img {
 	width:100%;
+
 }
 
 .address p {
-  color: #666663;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -467,6 +483,7 @@ ul.sub-menu {
 
 .footer-widget {
   margin-bottom: 68px;
+
 }
 
 .footer-widget .container {
@@ -475,7 +492,7 @@ ul.sub-menu {
 }
 
 .single-widget h2 {
-  color: #666663;
+  color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -1427,11 +1444,18 @@ h2.title {
 *******login page CSS******
 **************************/
 
+
+
 #form {
-  display: block;
-  margin-bottom: 185px;
-  margin-top: 185px;
-  overflow: hidden;
+  
+  background-image: url("../images/login/bgdark-dragon.jpg");
+  background-size: cover;
+  display: flex;
+  height: 900px;
+  align-items: center;
+  /* width: 90%; */
+  margin-right:auto;
+  margin-left:auto;
 }
 
 .login-form {
@@ -1443,16 +1467,17 @@ h2.title {
 }
 
 .login-form h2, .signup-form h2 {
-  color: #84C9FB;
+  color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 300;
   margin-bottom: 30px;
+  font-weight: bolder;
 }
 
 
 .login-form form input, .signup-form form input {
-  background: #F0F0E9;
+  /* background: #F0F0E9; */
   border: medium none;
   color: #84C9FB;
   display: block;
@@ -1464,10 +1489,12 @@ h2.title {
   outline: medium none;
   padding-left: 10px;
   width: 100%;
+  
 }
 
 .login-form form span{
   line-height: 25px;
+  color:white;
 }
 
 .login-form form span input {
@@ -1475,6 +1502,10 @@ h2.title {
   float: left;
   height: 15px;
   margin-right: 5px;
+}
+
+#lembraSenha {
+  color: white;
 }
 
 .login-form form button {
@@ -2478,6 +2509,10 @@ h2.title {
 #contact-page .contact-info address {
   margin-bottom: 40px;
   margin-top: -5px;
+}
+
+.address img {
+  height: 200px;
 }
 
 #contact-page .contact-info p {
