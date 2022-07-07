@@ -914,6 +914,10 @@ h2.title {
   color: #ffffff;
 }
 
+.foto-checkout {
+  width: 152,7344x;
+  height: 200px;
+}
 .productinfo img{
 
   height: 235px;
@@ -1605,6 +1609,11 @@ h2.title {
 *******Cart CSS******
 **************************/
 
+.foto-cart {
+  width: 152,7344x;
+  height: 200px;
+}
+
 .shopper-informations {
   display:none;
 }
@@ -1619,14 +1628,22 @@ h2.title {
 
 .breadcrumbs .breadcrumb {
   background:transparent;
-  margin-bottom: 75px;
+  margin-bottom: 55px;
   padding-left: 0;
+  margin-top:20px;
+  
 }
 
 .breadcrumbs .breadcrumb li a {
   background:#84C9FB;
   color: #2A2A2A;
   padding: 3px 7px;
+  font-weight: bold;
+}
+
+.breadcrumbs .active {
+  color:white;
+  font-weight: bold;
 }
 
 .breadcrumbs .breadcrumb li a:after {
@@ -1650,10 +1667,12 @@ h2.title {
   border: 1px solid #E6E4DF;
   margin-bottom: 50px
 }
-
+#cart_items .container {
+  background-color: #323336;
+}
 
 #cart_items .cart_info .cart_menu {
-  background: #84C9FB;
+  background: #bdc3c7;
   color: #fff;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
@@ -1786,9 +1805,24 @@ h2.title {
   font-weight: 300;
 }
 
+#do_action .container {
+  margin-top:20px;
+  background-color:#323336;
+}
+
+#do_action h3 {
+  color:white;
+}
+
+#do_action p {
+  color:white;
+}
+
 
 #do_action .total_area {
   padding-bottom: 18px !important;
+  background-color:#323336;
+
 }
 
 #do_action .total_area, #do_action .chose_area {
@@ -1804,14 +1838,14 @@ h2.title {
 
 .total_area ul li {
   background:#E6E4DF;
-  color: #84C9FB;
+  color: black;
   margin-top: 10px;
   padding: 7px 20px;
 }
 
 
 .user_option label {
-  color: #84C9FB;
+  color: white;
   font-weight: normal;
   margin-left: 10px;
 }
@@ -1829,7 +1863,7 @@ h2.title {
 }
 
 .user_info label {
-  color: #84C9FB;
+  color: white;
   display: block;
   font-size: 15px;
   font-weight: normal;
@@ -1856,7 +1890,7 @@ h2.title {
 .user_info input, select, textarea {
   background: #F0F0E9;
   border:0;
-  color: #84C9FB;
+  color: black;
   padding: 5px;
   width: 100%;
   border-radius: 0;
@@ -1879,6 +1913,7 @@ h2.title {
   margin-top: 18px;
   border: none;
   padding: 5px 15px;
+  font-weight: bold;
 }
 .update{
     margin-left: 40px;
