@@ -592,17 +592,24 @@ ul.sub-menu {
 ******* Home ******
 **************************/
 
+#banner-margin {
+ 
+}
+
 
 #slider {
   padding-bottom: 45px;
 }
 
+
 .carousel-indicators li {
+  
   background: #C4C4BE;
 }
 
 .carousel-indicators li.active {
-	  background:#84C9FB;
+	
+  background:#84C9FB;
 }
 
 .item {
@@ -616,15 +623,13 @@ ul.sub-menu {
   top: 52%;
 }
 
-.girl {
-  margin-left: 0;
-}
+
 
 .item h1 {
   color: #FFF;
   font-family: abel;
   font-size: 48px;
-  margin-top: 115px;
+  margin-top: 25px;
 }
 
 .item h1 span {
@@ -654,8 +659,45 @@ ul.sub-menu {
   color: #2A2A2A;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
-  font-weight: 300;
-  margin-top: 23px;
+  font-weight: 400;
+  margin-top: 85px;
+}
+
+#goinside-bttn {
+  
+  background: #84C9FB;
+  border: 0 none;
+  border-radius: 0;
+  color: #2A2A2A;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+    margin-top: 15px;
+}
+#goinside-bttn:hover {
+  background: #ffffff;
+}
+#goinside-bttn:hover {
+  background: #ffffff;
+}
+/* 1 */
+
+#indexbanner-bttn {
+  
+  background: #84C9FB;
+  border: 0 none;
+  border-radius: 0;
+  color: #2A2A2A;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 85px;
+}
+#indexbanner-bttn:hover {
+  background: #ffffff;
+}
+#indexbanner-bttn:hover {
+  background: #ffffff;
 }
 
 
