@@ -955,6 +955,10 @@ h2.title {
  position:relative;
 }
 
+#categoryinfo img {
+  height: 120px;
+  width: 100%;
+}
 
 /* .product-overlay {
   background:#84C9FB;
