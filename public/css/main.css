@@ -2125,7 +2125,7 @@ h2.title {
 
 
 .review-payment h2 {
-  color: #84C9FB;
+  color: white;
   font-size: 20px;
   font-weight: 300;
   margin-top: 45px;
@@ -2138,7 +2138,7 @@ h2.title {
 }
 
 .payment-options span label {
-  color: #84C9FB;
+  color: white;
   font-size: 14px;
   font-weight: 300;
   margin-right: 30px;
@@ -2614,7 +2614,7 @@ h2.title {
   margin-bottom: 70px
 }
 
-.contact-info {
+.contact-info p {
   
 
 }
@@ -2623,6 +2623,8 @@ h2.title {
 .contact-form .heading {
   text-transform: capitalize;
 }
+
+
 
 .contact-form .form-group {
   margin-bottom: 20px;
@@ -2673,7 +2675,7 @@ h2.title {
 
 #contact-page .contact-info p {
   margin-bottom: 0;
-  color: #84C9FB;
+  color: white;
   font-size: 16px;
   line-height: 25px;
 }
